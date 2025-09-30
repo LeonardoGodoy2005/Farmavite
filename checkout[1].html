@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - FarmaVite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Finalizar Pedido</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="cart.html">Carrinho</a>
+    </nav>
+  </header>
+  <main>
+    <form id="checkout-form">
+      <label>Endereço de entrega:<input id="addr" type="text" required></label>
+      <label>Forma de pagamento:
+        <select id="pm">
+          <option>Pix</option>
+          <option>Cartão de Crédito</option>
+          <option>Boleto</option>
+        </select>
+      </label>
+      <label>Receita médica (opcional):<input id="presc" type="file" accept="image/*,application/pdf"></label>
+      <button type="submit">Confirmar Pedido</button>
+    </form>
+  </main>
+  <script src="js/cart.js"></script>
+</body>
+</html>
